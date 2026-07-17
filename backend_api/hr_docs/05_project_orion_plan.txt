@@ -1,0 +1,34 @@
+DOCUMENT TYPE: Project Plan
+TITLE: Project Orion - Notification Service Migration
+AUTHOR: Meera Krishnan, Product Manager
+DATE: June 2026
+STATUS: In Planning
+
+1. OVERVIEW
+Project Orion involves migrating our notification/email dispatch service from
+a monolithic architecture to a queue-based microservice, to handle growing
+send volume.
+
+2. PROPOSED TIMELINE
+- Planning & design: 2 weeks
+- Build: 4 weeks
+- Cutover: proposed for a weekday afternoon, to allow full engineering team
+  availability for monitoring (most of the team works standard daytime hours
+  and weekend coverage is thin).
+
+3. DATA AUDIT STATUS
+No formal audit of existing notification logs/data has been scheduled yet.
+Team plans to review "as we go" during the build phase rather than before
+cutover, since the timeline is already tight and stakeholders want a Q3
+launch.
+
+4. RISK NOTES (Meera Krishnan)
+Team is aware this is a similar shape of project to a past data migration
+effort, but no formal lessons-learned review has been done yet. Flagging that
+someone should check prior migration postmortems before finalizing the
+cutover window and audit approach.
+
+5. OPEN QUESTIONS
+- Should cutover be scheduled outside weekday afternoon peak hours?
+- Should the data audit happen before, not during, the migration build phase?
+- Who from the original Atlas migration team is available to consult?

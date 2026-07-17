@@ -1,0 +1,34 @@
+DOCUMENT TYPE: Internal Policy
+TITLE: Data Retention & Customer Data Handling Policy
+OWNER: Priya Nandan, Head of Compliance
+LAST UPDATED: March 12, 2025
+STATUS: Active
+
+1. PURPOSE
+This policy defines how customer data collected through our platform is stored,
+archived, and eventually deleted, in compliance with regional data protection
+requirements.
+
+2. RETENTION PERIODS
+- Active customer accounts: data retained indefinitely while account is active.
+- Closed/churned accounts: data retained for 24 months, then anonymized.
+- Support tickets and chat logs: retained for 12 months.
+- Billing and invoice records: retained for 7 years (legal requirement).
+
+3. BACKGROUND
+This policy was introduced after the Q3 2024 customer data audit (see
+"Project Atlas Postmortem") revealed inconsistent deletion practices across
+teams. Prior to this policy, some teams were deleting churned customer data
+after only 30 days, which caused issues when Finance needed historical billing
+records for tax filings.
+
+4. APPROVAL CHAIN
+Drafted by Priya Nandan, reviewed by Legal (Ramesh Iyer), approved by CTO
+Anjali Kapoor. Any changes to retention periods require sign-off from both
+Legal and Compliance.
+
+5. OPEN QUESTION
+Engineering (Karthik Subramanian) has flagged that the 24-month retention
+for closed accounts may conflict with upcoming EU-style "right to be
+forgotten" requests. This is still under review as of this document's last
+update and is not yet resolved.

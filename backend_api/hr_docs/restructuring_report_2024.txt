@@ -1,0 +1,16 @@
+Engineering Restructuring & Layoff Report (June 2024)
+
+Executive Summary:
+In June 2024, MindVault AI implemented a restructuring plan in the Engineering department, which resulted in the layoff of 15 software engineers due to budget cuts.
+
+What Went Wrong:
+1. Poor Communication: The restructuring was announced abruptly without prior team-wide context. Management did not provide clear reasons or open channels for questions. This led to widespread panic, speculation, and a general loss of trust.
+2. Impact on Morale: Following the layoffs, the remaining engineering team suffered from extremely low morale. Key senior developers voluntarily resigned within three months because of the high stress and fear of another layoff.
+3. Legal Complaints: The company received several legal complaints from affected employees. They alleged that the notice periods given did not match the terms in their original contracts, and that severance packages were calculated incorrectly.
+
+Learnings and Recommendations:
+- Future workforce adjustments must be preceded by open communication.
+- HR and legal teams must thoroughly audit notice periods and severance calculations beforehand to ensure complete compliance.
+- Post-layoff support and reassurance sessions are critical to retain remaining staff.
+
+Contact: Priya Sharma, Head of HR Operations

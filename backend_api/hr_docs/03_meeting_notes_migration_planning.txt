@@ -1,0 +1,31 @@
+DOCUMENT TYPE: Meeting Notes
+TITLE: Project Atlas - Migration Planning Sync
+DATE: August 14, 2024
+ATTENDEES: Sarah Chen (PM), Karthik Subramanian (Eng), Priya Nandan (Compliance),
+Deepak Rao (Infra)
+
+NOTES:
+- Sarah Chen proposed cutover date of Tuesday, Sept 24, citing that weekend
+  maintenance windows are harder to staff since infra on-call rotates weekly
+  and the weekend on-call engineer (Deepak Rao) was already booked for another
+  release that same weekend.
+- Karthik Subramanian raised concern about traffic load on weekday afternoons
+  but agreed the weekend conflict was a valid constraint, and proposed Tuesday
+  EARLY MORNING (5-7am IST) as a compromise low-traffic weekday slot instead
+  of Tuesday afternoon.
+- Final decision in this meeting: cutover tentatively set for Tuesday early
+  morning. [Note: actual cutover later moved to Tuesday afternoon due to a
+  dependency delay from the Infra team - see postmortem for what actually
+  happened.]
+- Priya Nandan asked whether a data retention audit was planned before
+  migration. Sarah Chen said it would happen "in parallel" with migration
+  work rather than before, due to timeline pressure.
+- Action item: Karthik to prepare rollback plan. Deepak to confirm infra
+  capacity for shard cluster by Aug 20.
+
+DECISION LOG ENTRY:
+Decision: Proceed with parallel audit instead of pre-migration audit, to
+avoid delaying the project timeline further.
+Decision owner: Sarah Chen
+Overridden concern: Priya Nandan (Compliance) recommended pre-migration audit
+as safer but deferred to PM's timeline call.

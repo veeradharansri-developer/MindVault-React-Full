@@ -1,0 +1,40 @@
+DOCUMENT TYPE: Project Postmortem
+TITLE: Project Atlas - Customer Data Migration (Q3 2024)
+AUTHOR: Karthik Subramanian, Senior Backend Engineer
+DATE: October 3, 2024
+STATUS: Final
+
+1. SUMMARY
+Project Atlas was a migration of customer account data from our legacy MySQL
+system to a new sharded PostgreSQL cluster. The migration was completed but
+ran 3 weeks over schedule and caused a 6-hour partial outage during cutover.
+
+2. WHAT WENT WRONG
+- The team underestimated the volume of "zombie" records: accounts marked as
+  closed but never actually deleted due to inconsistent deletion logic across
+  the billing and support teams.
+- During the audit required for migration, we discovered churned customer data
+  going back as far as 6 years in some tables, despite no formal policy
+  requiring that retention. This directly led to the creation of the Data
+  Retention Policy afterward.
+- The cutover was scheduled for a Tuesday afternoon (high traffic window).
+  This was flagged as risky by Karthik Subramanian in planning but was
+  overridden by the original project timeline set by then-PM Sarah Chen, who
+  has since left the company.
+
+3. WHAT WENT RIGHT
+- Rollback plan worked as designed; no data was lost during the outage.
+- Cross-team communication between Engineering and Support during the incident
+  was rated highly in the post-incident survey.
+
+4. RECOMMENDATIONS FOR FUTURE MIGRATIONS
+- Schedule cutovers during low-traffic windows (weekend nights), not weekday
+  afternoons.
+- Require a data audit BEFORE migration planning starts, not during.
+- Assign a dedicated on-call engineer for the first 48 hours post-cutover.
+
+5. KEY PEOPLE
+Karthik Subramanian (engineering lead, still with company) has the deepest
+context on the technical migration details. Sarah Chen (former PM) made the
+original scheduling decision but is no longer available for follow-up
+questions.

@@ -1,0 +1,14 @@
+MindVault Account Troubleshooting
+
+Guidelines for resolving login errors, resetting passwords, and updating account metadata.
+
+1. Resetting Your Password:
+   - Click the "Forgot Password" link on the MindVault login page.
+   - Enter your registered email address to receive a secure reset link.
+   - The password reset link expires after twenty-four (24) hours.
+
+2. Multi-Factor Authentication (MFA) Lockouts:
+   - If you lose access to your authenticator app, please retrieve your recovery code saved during initial MFA setup.
+   - If recovery codes are unavailable, email security@mindvault.ai for identity verification and manual reset.
+
+Contact: support@mindvault.ai

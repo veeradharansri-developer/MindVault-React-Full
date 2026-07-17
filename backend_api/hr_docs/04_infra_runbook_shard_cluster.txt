@@ -1,0 +1,36 @@
+DOCUMENT TYPE: Internal Runbook
+TITLE: PostgreSQL Shard Cluster - Operations Runbook
+AUTHOR: Deepak Rao, Infrastructure Engineer
+LAST UPDATED: November 2024
+STATUS: Active, partially incomplete
+
+1. OVERVIEW
+This runbook covers day-to-day operations for the sharded PostgreSQL cluster
+introduced during Project Atlas (see Project Atlas Postmortem for migration
+history).
+
+2. ROUTINE OPERATIONS
+- Shard rebalancing: run monthly, script located at ops/rebalance_shards.sh
+- Backup verification: automated, alerts sent to #infra-alerts if a backup
+  fails checksum validation.
+- Failover testing: quarterly, requires manual coordination with on-call.
+
+3. KNOWN ISSUES
+- Shard 4 occasionally shows replication lag under high write load. Root
+  cause not fully understood; current mitigation is a manual restart of the
+  replication worker. Deepak Rao is currently the only person who knows the
+  exact restart sequence and has not yet documented the precise steps.
+- Connection pool exhaustion has occurred twice (Dec 2024, Jan 2025) under
+  traffic spikes. Deepak Rao resolved both manually via direct DB access;
+  no automated alert exists for this yet.
+
+4. NOTE FOR FUTURE MAINTAINERS
+Most of the tribal knowledge for this cluster currently exists only with
+Deepak Rao. If Deepak is unavailable, escalate to the original migration
+team (Karthik Subramanian) who has partial context but was not involved in
+day-2 operations setup.
+
+5. TODO
+- Document the shard 4 replication lag fix properly.
+- Set up automated alerting for connection pool exhaustion.
+- Cross-train at least one other engineer on manual failover procedures.

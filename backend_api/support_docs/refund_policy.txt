@@ -1,0 +1,14 @@
+MindVault Customer Refund Policy
+
+We want you to be completely satisfied with your purchase. This document outlines the refund eligibility and steps for MindVault product offerings.
+
+1. Refund Eligibility:
+   - Customers are eligible for a full refund if requested within fourteen (14) days of the initial purchase date.
+   - Products or subscriptions must not have been used excessively (e.g. API usage exceeding 50 requests).
+   - Promotional, custom-contract, or discounted enterprise purchases are non-refundable.
+
+2. Refund Request Process:
+   - To request a refund, please contact billing@mindvault.ai with your order reference number and invoice details.
+   - Refunds will be processed back to the original payment method within five (5) to ten (10) business days.
+
+Contact: support@mindvault.ai

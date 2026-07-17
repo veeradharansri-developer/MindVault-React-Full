@@ -1,0 +1,25 @@
+MindVault AI Onboarding Standard Operating Procedure (SOP)
+
+This document details the step-by-step onboarding process for all new employees joining MindVault AI.
+
+Step 1: Pre-onboarding (1 week before joining)
+- Collect signed offer letter and basic employee information.
+- IT Department: Provision laptop, create corporate email address, and setup software licenses.
+- HR: Prepare the welcoming packet.
+
+Step 2: Day 1 (Welcome & IT Setup)
+- 9:30 AM: Welcome session with the Onboarding Lead.
+- 11:00 AM: IT equipment handoff and setup. Ensure VPN, email, and slack are working.
+- 2:00 PM: Introduction to the designated 'Onboarding Buddy' from the team.
+- 3:00 PM: General HR paperwork completion.
+
+Step 3: Week 1 (Orientation & Training)
+- Team and project orientations.
+- Access requests for repository, database, and dev servers.
+- Mandatory training modules (Security, Privacy, and Code of Conduct).
+
+Step 4: Month 1 (First checkpoint)
+- Mid-month check-in by HR.
+- 30-day performance expectations review with direct manager.
+
+Owned by: Arjun Mehta, HR Onboarding Lead

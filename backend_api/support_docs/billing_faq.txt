@@ -1,0 +1,13 @@
+MindVault Customer Billing & Invoices FAQ
+
+This document outlines billing cycles, invoice issues, payment methods, and auto-renew.
+
+1. Supported Payment Methods:
+   - We accept all major credit/debit cards (Visa, MasterCard, American Express) and PayPal.
+   - Enterprise subscriptions can be processed via ACH/Wire transfers. Contact sales@mindvault.ai for corporate invoices.
+
+2. Billing Cycle and Auto-Renew:
+   - MindVault subscriptions are billed on a monthly or annual auto-renew cycle.
+   - You can cancel your subscription at any time under Settings -> Billing. Cancellation stops future charges, but past months are non-refundable.
+
+Contact: support@mindvault.ai
